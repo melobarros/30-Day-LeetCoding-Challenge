@@ -21,10 +21,10 @@ class Solution:
     def isHappy(self, n: int) -> bool:
         seen = {}
         
-        while not(n in seen):
-            if sum([int(d)**2 for d in str(n)]) == 1:
+        while True:
+            n = sum([int(d)**2 for d in str(n)])
+            if n == 1:
                 return True
-            else:
-                seen[n] = True;
-                n = sum([int(d)**2 for d in str(n)])
-        return False
+            if n in seen:
+                return False
+            seen[n] = True
