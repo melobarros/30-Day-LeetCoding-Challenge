@@ -23,8 +23,8 @@ class Solution:
         base_anagrams = {}
         output = []
         
-        for index, string in enumerate(strs):
-            sortedString = ''.join(sorted(list(string)))
+        for string in strs:
+            sortedString = ''.join(sorted(string))
             if sortedString in base_anagrams:
                 base_anagrams[sortedString].append(string)
             else:
