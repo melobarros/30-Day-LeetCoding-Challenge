@@ -21,6 +21,9 @@ Example 4:
   Input: arr = [1,1,2,2]
   Output: 2
   Explanation: Two 1s are counted cause 2 is in arr.
+  
+Hint #1: Use hashset to store all elements.
+Hint #2: Loop again to count all valid elements.
 """
 
 class Solution:
