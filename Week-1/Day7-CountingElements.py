@@ -22,3 +22,11 @@ Example 4:
   Output: 2
   Explanation: Two 1s are counted cause 2 is in arr.
 """
+
+class Solution:
+    def countElements(self, arr: List[int]) -> int:
+        count = 0
+        for num in arr: if(num + 1 in arr): 
+            count += 1
+            
+        return count
